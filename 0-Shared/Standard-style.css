@@ -1,0 +1,158 @@
+/*MISURE STANDARD*/
+:root {
+  font-family:sans-serif;
+  font-size:16px;
+  --color_white: rgb(255, 255, 255);
+  --color_black: rgb(0, 0, 0);
+  --color_grey: rgb(81, 81, 81);
+  --color_red: rgb(207, 20, 43);
+  --box_shadow:rgb(222, 222, 222);
+  --pantone_1:rgb(19, 104, 154);
+  --pantone_2: rgb(4, 160, 202);
+  --pantone_3:rgb(155, 213, 231);
+  --header_shadow: rgba(0, 0, 0, 0.063);
+  --color_bar: linear-gradient(to left, var(--pantone_3), var(--pantone_1));
+}
+  
+body {
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  cursor: pointer;
+}
+
+/*HEADER*/
+
+header{
+  display: flex;
+}
+
+header nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 16px;
+  box-shadow: 0px 5px 5px var(--header_shadow);
+}
+
+header nav a{
+  text-decoration: none;
+  color: black;
+}
+
+#menu{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 50px;
+}
+
+.menu_logo img{
+	width: 40px;
+}
+
+.pref img{
+  width: 15px;
+  margin-left: 5px;
+  }
+
+img{
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*BUTTON*/
+
+.view {
+  display: inline-block;
+  flex-shrink: 0;
+  min-width: 100px;
+  padding: 10px 25px;
+  color: var(--pantone_1);
+  line-height: 15px;
+  background-color: var(--pantone_2);
+  color: var(--color__black);
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: all .2s ease;
+}
+
+.view:hover, .view:focus {
+  box-shadow: 0px 5px 5px var(--header_shadow);
+}
+
+/*FOOTER*/
+.footer{
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  background:#000;
+  margin-top: 30px;
+  padding:30px;
+  text-align:center;
+}
+    
+.footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:14px;
+}
+
+.footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+}
+
+.footer .row a:hover{
+  color:#fff;
+}
+
+.footer .row ul{
+  width:100%;
+}
+
+.footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+}
+
+.footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+}
+    
+@media (max-width:500px){
+    .footer{
+    text-align:left;
+    padding:5%;
+  }
+
+  .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+  }
+
+  .footer .row a i{
+    margin:0% 3%;
+  }
+}
+    

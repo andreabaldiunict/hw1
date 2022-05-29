@@ -1,0 +1,140 @@
+body{
+	margin: 0px;
+	color: black;
+	background-image: url('../Images/sfondo_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+section{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: absolute;
+	font-size: 20px;
+	background-color: var(--color_white);
+	box-shadow:  5px  5px 5px #dedede;
+	border-radius: 20px;
+	padding: 45px 55px 45px 55px;
+	height: auto;
+	width: auto;
+	margin-top: 90px;
+	left: 20%;
+	right: 20%;
+}
+
+#formLogin{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+  
+img{
+	width: 80%;
+	align-items: center;
+	justify-content: center;
+}
+  
+.textBox, #submit{
+	height: 40px;
+	width: 300px;
+	margin-top: 10px;
+	border-radius: 10px;
+	font-size: 14px;
+	background-color: transparent;
+}
+  
+.textBox{
+	padding-left: 15px;
+	outline: 0;
+	color: var(--color_grey);
+	border: 1px solid var(--color_grey);
+	transition: 150ms ease-in-out;
+}
+  
+#submit{
+	margin-top: 10px;
+	background-color: var(--pantone_2);
+	border: none;
+	color: black;
+	text-align: center;
+}
+  
+#submit:hover{
+	cursor: pointer;
+}
+  
+input:-webkit-autofill{
+	transition: background-color 5000s ease-in-out 0s;
+}
+  
+.compulsory{
+	border: 1.5px solid rgb(221, 0, 0);
+}
+  
+::placeholder {
+	color: var(--color_grey);
+	opacity: 1; /* Firefox */
+}
+  
+input:focus::placeholder {
+	color: black;
+}
+  
+.textBox:focus{
+	color: black;
+	background-color: var(--color_white);
+	transform: scale(1.01);
+}
+  
+.textBox:hover{
+	transform: scale(1.01);
+	transition: 150ms ease-in-out;
+}
+  
+.inputAlertMessage{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 0.8em;
+	color: rgb(214, 0, 0);
+}
+#inputBox span{
+	font-size: 14px;
+	color: red;
+}
+
+#containerShortcut{
+	margin: 0;
+}
+  
+#containerShortcut a{
+	color: var(--pantone_2);
+}
+  
+#containerShortcut p{
+	font-size: 0.7em;
+}
+  
+.hidden{
+	display: none;
+	justify-content: center;
+	text-align: center;  
+}
+  
+.noScroll{
+	overflow: hidden;
+}
+
+.footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background:#000;
+	text-align:center;
+	}
